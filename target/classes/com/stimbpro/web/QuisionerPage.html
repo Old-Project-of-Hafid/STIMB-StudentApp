@@ -1,0 +1,68 @@
+<wicket:extend xmlns:wicket="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+    <form wicket:id="form" layout:fragment="content" class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Quisioner</h1>
+
+                    <p class="lead">Sekolah Tinggi Musik Bandung</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                NPM : <input wicket:id="npmsearch" type="text"/>
+                <button class="btn btn-sm" wicket:id="klik">Cari</button>
+            </div>
+        </div>
+
+        <hr>
+        <h4><b>Keterangan :</b></h4>
+        <ul>
+            <li>1 = sangat tidak baik/tidak pernah</li>
+            <li>2 = kurang/pernah</li>
+            <li>3 = cukup/kadang-kadang</li>
+            <li>4 = baik/sering</li>
+            <li>5 = sangat baik/selalu</li>
+        </ul>
+        Pilih Quisioner : <select wicket:id="sites"></select>
+
+        <div wicket:id="containeridquisioner" class="row">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Quisioner</th>
+                    <th style="text-align: center">1</th>
+                    <th style="text-align: center">2</th>
+                    <th style="text-align: center">3</th>
+                    <th style="text-align: center">4</th>
+                    <th style="text-align: center">5</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr wicket:id="rowsquisioner">
+                    <td><span wicket:id="dataRowQuisioner"></span></td>
+                    <span wicket:id="radiobutton">
+                        <td style="text-align: center"><input wicket:id="radio1" type="radio" value="1"/></td>
+                        <td style="text-align: center"><input wicket:id="radio2" type="radio" value="2"/></td>
+                        <td style="text-align: center"><input wicket:id="radio3" type="radio" value="3" checked/></td>
+                        <td style="text-align: center"><input wicket:id="radio4" type="radio" value="4"/></td>
+                        <td style="text-align: center"><input wicket:id="radio5" type="radio" value="5"/></td>
+                    </span>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            Komentar dan Saran
+        </div>
+        <div class="row">
+            <textarea wicket:id="komentar" type="text" style="width: 100%; padding: .5em 1em;"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-md-11"></div>
+            <div class="col-md-1"><button class="btn btn-sm" wicket:id="klikSubmit">Cari</button></div>
+        </div>
+    </form>
+</wicket:extend>

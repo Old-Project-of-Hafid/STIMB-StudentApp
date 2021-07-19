@@ -1,0 +1,202 @@
+<wicket:extend xmlns:wicket="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+    <form wicket:id="form" layout:fragment="content" class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Mahasiswa</h1>
+
+                    <p class="lead">Sekolah Tinggi Musik Bandung</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                NPM : <input wicket:id="npmsearch" type="text"/>
+                <button class="btn btn-sm" wicket:id="klik">Cari</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <!--NPM-->
+            <div class="col-md-2">
+                NPM
+            </div>
+            <div class="col-md-10">
+                <span wicket:id="npm" class="text">this text will be replaced</span>
+            </div>
+        </div>
+        <div class="row">
+            <!--NAMA-->
+            <div class="col-md-2">
+                Nama
+            </div>
+            <div class="col-md-10">
+                <span wicket:id="name" class="text">this text will be replaced</span>
+            </div>
+        </div>
+        <div class="row">
+            <!--MAYOR-->
+            <div class="col-md-2">
+                Mayor
+            </div>
+            <div class="col-md-10">
+                <span wicket:id="alamat" class="text">this text will be replaced</span>
+            </div>
+        </div>
+        <div class="row">
+            <!--Prodi-->
+            <div class="col-md-2">
+                Prodi
+            </div>
+            <div class="col-md-10">
+                <span wicket:id="email" class="text">this text will be replaced</span>
+            </div>
+        </div>
+        <div class="col-md-12">
+
+            <hr>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    Tahun Ajaran : <select wicket:id="sites"></select>
+                </div>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#krs" role="tab" data-toggle="tab">KRS</a></li>
+                <li><a href="#khs" role="tab" data-toggle="tab">KHS</a></li>
+                <li><a href="#absen" role="tab" data-toggle="tab">Absen</a></li>
+                <li><a href="#kalender" role="tab" data-toggle="tab">Kalender Akademik</a></li>
+                <li><a href="#jadwal" role="tab" data-toggle="tab">Jadwal Tersedia</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="krs">
+                    <div wicket:id="containerid">
+                        <span wicket:id="pagingNavigator">message will be here</span><br>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Nama Matakuliah</th>
+                                <th>SKS</th>
+                                <th>Tahun Ajaran</th>
+                                <th>Semester</th>
+                                <th>Nama Dosen</th>
+                                <th>Jadwal</th>
+                            </tr>
+                            </thead>
+                            <tr wicket:id="rowsKrs">
+                                <td wicket:id="dataRowKrs"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="khs">
+                    <div class="col-md-2">
+                        <span wicket:id="ipkorips" class="text">this text will be replaced</span>
+                    </div>
+                    <div class="col-md-2" style="align-content: flex-start">
+                        <span wicket:id="ipk" class="text">this text will be replaced</span>
+                    </div>
+                    <div class="col-md-2">
+                        Total SKS
+                    </div>
+                    <div class="col-md-2" style="align-content: flex-start">
+                        <span wicket:id="totsks" class="text">this text will be replaced</span>
+                    </div>
+                    <div wicket:id="containeridkhs" class="row">
+                        <span wicket:id="pagingNavigatorkhs">message will be here</span><br>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Nama Matakuliah</th>
+                                <th>SKS</th>
+                                <th>Nilai</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tr wicket:id="rowskhs">
+                                <td wicket:id="dataRowkhs"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="absen">
+                    <div wicket:id="containeridabsen" class="row">
+                        <span wicket:id="pagingNavigatorabsen">message will be here</span><br>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Mata Kuliah</th>
+                                <th style="text-align: center">01</th>
+                                <th style="text-align: center">02</th>
+                                <th style="text-align: center">03</th>
+                                <th style="text-align: center">04</th>
+                                <th style="text-align: center">05</th>
+                                <th style="text-align: center">06</th>
+                                <th style="text-align: center">07</th>
+                                <th style="text-align: center">UTS</th>
+                                <th style="text-align: center">08</th>
+                                <th style="text-align: center">09</th>
+                                <th style="text-align: center">10</th>
+                                <th style="text-align: center">11</th>
+                                <th style="text-align: center">12</th>
+                                <th style="text-align: center">13</th>
+                                <th style="text-align: center">14</th>
+                                <th style="text-align: center">UAS</th>
+                                <th style="text-align: center">Kehadiran</th>
+                            </tr>
+                            </thead>
+                            <tr wicket:id="rowsabsen">
+                                <td wicket:id="dataRowabsen"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="kalender">
+                    <div wicket:id="containeridkalender" class="row">
+                        <span wicket:id="pagingNavigatorkalender">message will be here</span><br>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Tahun Ajar</th>
+                                <th>Semester</th>
+                                <th>Kegiatan</th>
+                                <th>Tanggal</th>
+                            </tr>
+                            </thead>
+                            <tr wicket:id="rowskalender">
+                                <td wicket:id="dataRowkalender"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="jadwal">
+                    <!-- isi disini-->
+                    <div wicket:id="containeridjadwal" class="row">
+                        <span wicket:id="pagingNavigatorjadwal">message will be here</span><br>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th style="text-align: center">Nama Matakuliah</th>
+                                <th style="text-align: center">Jadwal</th>
+                            </tr>
+                            </thead>
+                            <tr wicket:id="rowsjadwal">
+                                <td wicket:id="dataRowjadwal"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </form>
+
+</wicket:extend>

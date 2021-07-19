@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/DaemonApp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/web/HomePage.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/web/HomePage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/web/MyWebApplication.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/web/PubLayout.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/web/PubLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/stimbpro/web/WicketConfig.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
